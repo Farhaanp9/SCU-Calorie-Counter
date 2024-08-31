@@ -1,0 +1,171 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#home{
+	margin: 0;
+  	font-family: Arial, Helvetica, sans-serif;
+  	background-color: #dbfffe;
+	text-align: center;
+	font-family: sans-serif;
+}
+#filler{
+	height: 24px;
+}
+.topnav {
+	width:100%;
+	position: fixed;
+	top: 0px;
+	display: flex;
+	justify-content: space-evenly;
+  overflow: hidden;
+  background-color: #333;
+}
+.nav-items{
+	width: 15%;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #00ada8;
+  color: black;
+}
+#image{
+  height: 589px;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;  background-color:#333 ;
+  background-image: url("images/bensonFood.jpg");
+}
+#middle{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutbox{
+  text-align: center;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 20px;
+}
+
+.about-text{
+	margin: 50px;
+	font-size: 25px;
+}
+#tipsbox{
+  padding: 10px;
+  border: 5px solid black;
+  margin: 20px;
+  background-color: #99e699;
+}
+#mapbox{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 20px;
+  background-color: #ffff99;
+}
+
+#back{
+  text-align: center;
+}
+
+.center-text{
+	text-align: center;
+	 font-family: sans-serif;
+}
+
+
+
+#members{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	background-color: #ADD8E6;
+	padding: 50px;
+	padding-bottom: 5px;
+
+}
+
+
+.profile{
+	display: flex;
+	flex-direction: column;
+	width: 15%;
+	min-height: 600px;
+}
+
+
+.profile-photo{
+	min-height:  220px;
+	object-fit: cover;
+}
+.purpose{
+	display: flex;
+	flex-direction: column;
+	background-color: #FFFFFF;
+	padding: 50px;
+}
+.map-image{
+	width: 100%;
+}
+#trips-text{
+	style=margin: 50px; font-size: 25px;
+}
+
+@media only screen and (max-width: 800px){
+	#trips-text{
+		style=margin: 5px; font-size: 20px;
+	}
+	#filler{
+		height: 220px;
+	}
+	.topnav {
+	  flex-direction: column;
+		padding: 0px;
+		margin: 0px
+	}
+	#aboutbox{
+	  padding: 2px;
+	  border: 5px solid black;
+	}
+	.about-text{
+		margin: 10px;
+		font-size: 20px;
+	}
+
+	#image{
+	  height: 250px;
+	}
+	#members{
+		flex-direction: column;
+		background-color: #ADD8E6;
+		justify-content: center;
+	}
+	.profile{
+		width: 100%;
+		min-height: 0px;
+	}
+	.profile-photo{
+		width:  100%;
+
+	}
+}
